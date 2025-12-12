@@ -1,0 +1,8 @@
+description: Rust
+
+packages:
+  - rustup
+
+conflicts: []
+
+post_install_hook: "scripts/rustup-setup.sh"

@@ -1,0 +1,21 @@
+description: Network related packages
+
+packages:
+   - bind
+   - bridge-utils
+   - dnsmasq
+   - iw
+   - libnma
+   - libnma-gtk4
+   - net-tools
+   - networkmanager
+   - networkmanager-openvpn
+   - nm-connection-editor
+   - openbsd-netcat
+   - openssh
+   - openvpn
+   - traceroute
+
+conflicts: []
+
+post_install_hook: ""

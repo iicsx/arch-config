@@ -1,0 +1,8 @@
+description: Python
+
+packages:
+  - python
+
+conflicts: []
+
+post_install_hook: ""

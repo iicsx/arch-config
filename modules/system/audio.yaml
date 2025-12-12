@@ -1,0 +1,17 @@
+description: Audio related packages
+
+packages:
+  - alsa-utils
+  - pavucontrol
+  - pipewire
+  - pipewire-alsa
+  - pipewire-audio
+  - pipewire-jack
+  - pipewire-pulse
+  - qemu-audio-pipewire
+  - sof-firmware
+  - wireplumber
+
+conflicts: []
+
+post_install_hook: ""

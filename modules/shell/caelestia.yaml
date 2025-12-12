@@ -1,0 +1,18 @@
+description: Caelestia Desktop Shell
+
+packages:
+  - caelestia-shell-git
+  - caelestia-cli-git
+  # based on
+  - quickshell-git
+  # requires
+  - adw-gtk-theme
+  - papirus-icon-theme
+  - qt5ct-kde
+  - qt6ct-kde
+  - ttf-jetbrains-mono-nerd
+  - ttf-material-symbols-variable
+
+conflicts: []
+
+post_install_hook: ""

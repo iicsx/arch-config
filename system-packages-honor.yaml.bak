@@ -1,0 +1,34 @@
+description: Packages installed manually on the system (auto-synced by dcli)
+packages:
+- cmatrix
+- docker
+- dotnet-sdk
+- firefox
+- gammastep
+- ghcup-hs-bin
+- gnome-browser-connector
+- gnome-shell-extensions
+- gnome-tweaks
+- haskell-language-server
+- iverilog
+- lib32-vulkan-radeon
+- libappindicator
+- lsd
+- ntfs-3g
+- plasma-browser-integration
+- ranger
+- rust-analyzer
+- rust-src
+- spice
+- syncthing
+- verible
+- vim
+- vlc
+- wl-screenrec-git
+- yay-debug
+- ytfzf
+exclude: []
+conflicts: []
+pre_install_hook: null
+post_install_hook: null
+hook_behavior: ask

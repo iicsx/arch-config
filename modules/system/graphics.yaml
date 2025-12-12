@@ -1,0 +1,11 @@
+description: Graphics related packages
+
+packages:
+  - vulkan-radeon
+  - gst-libav
+  - gst-plugin-va
+  - gstreamer-vaapi
+
+conflicts: []
+
+post_install_hook: ""

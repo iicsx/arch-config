@@ -1,0 +1,10 @@
+description: E-Mail related packages
+
+packages:
+  - isync
+  - goimapnotify
+  - mutt-wizard
+
+conflicts: []
+
+post_install_hook: ""

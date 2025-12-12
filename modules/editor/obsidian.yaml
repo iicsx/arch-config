@@ -1,0 +1,8 @@
+description: Obsidian Markdown Editor
+
+packages:
+  - obsidian
+
+conflicts: []
+
+post_install_hook: ""

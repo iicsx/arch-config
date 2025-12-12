@@ -1,0 +1,12 @@
+description: Gnome related compatibility or utility packages
+
+packages:
+  - gnome-control-center
+  - gnome-desktop
+  - gnome-network-displays
+  - nautilus
+  - xdg-desktop-portal-gnome
+
+conflicts: []
+
+post_install_hook: ""

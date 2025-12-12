@@ -1,0 +1,9 @@
+description: Browser related modules
+
+packages:
+  - zen-browser-bin
+
+conflicts: []
+
+post_install_hook: ""
+

@@ -1,0 +1,9 @@
+description: Bluetooth related packages
+
+packages:
+  - blueman
+  - bluez-utils
+
+conflicts: []
+
+post_install_hook: ""

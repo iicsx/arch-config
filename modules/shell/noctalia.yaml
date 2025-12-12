@@ -1,0 +1,21 @@
+description: Noctalia Desktop Shell
+
+packages:
+  - noctalia-shell
+  - adw-gtk-theme
+  - brightnessctl
+  - cava
+  - cliphist
+  - evolution-data-server # Calendar Events
+  - gpu-screen-recorder
+  - matugen-git
+  - papirus-icon-theme
+  - qt5ct-kde
+  - qt6ct-kde
+  - quickshell
+  - wlsunset
+  - xdg-desktop-portal
+
+conflicts: []
+
+post_install_hook: ""

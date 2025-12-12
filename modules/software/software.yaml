@@ -1,0 +1,22 @@
+description: Various Applications
+
+packages:
+  - fragments # BitTorrent Client
+  - qutebrowser
+  - thorium-browser-bin # Rarely needed
+  - onlyoffice-bin
+  - remmina # RDP Client
+  - freerdp # Dependency of remmina
+  - btop
+  - dua-cli # Disk management tool
+  - mpv
+  - typst
+  - unrar
+  - usbguard
+  - yt-dlp
+  - wf-recorder
+
+conflicts: []
+
+# Nothing in here needs a post install hook (yet) and it vaguely makes sense to put it here
+post_install_hook: "scripts/link-dotfiles.sh"

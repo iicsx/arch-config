@@ -1,0 +1,15 @@
+description: Foot terminal emulator
+
+packages:
+  - foot
+  - ttf-0xproto-nerd
+  - zoxide
+  - starship
+  - fastfetch
+  - fzf
+  - git-delta
+  - less
+
+conflicts: []
+
+post_install_hook: ""

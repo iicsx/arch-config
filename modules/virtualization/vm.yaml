@@ -1,0 +1,14 @@
+description: Virtualisation related packages
+
+packages:
+  - virt-manager
+  - qemu-full
+  - virt-viewer
+  - vde2
+  - libvirt
+  - spice
+
+conflicts: []
+
+post_install_hook: ""
+

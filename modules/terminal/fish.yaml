@@ -1,0 +1,9 @@
+description: Fish terminal
+
+packages:
+  - fish
+
+conflicts: []
+
+post_install_hook: ""
+

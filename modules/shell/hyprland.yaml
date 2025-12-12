@@ -1,0 +1,21 @@
+description: Hyprland
+
+packages:
+  - hyprland
+  - cliphist
+  - fuzzel
+  - grim
+  - hyprland-qt-support
+  - hyprpicker
+  - jq
+  - slurp
+  - swappy
+  - tesseract
+  - uwsm
+  - wl-clipboard
+  - xdg-desktop-portal-hyprland
+  - xdg-desktop-portal-gtk
+
+conflicts: []
+
+post_install_hook: "scripts/wallpaper-sync.sh"

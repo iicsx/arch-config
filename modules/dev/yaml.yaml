@@ -1,0 +1,8 @@
+description: YAML
+
+packages:
+  - yamlfmt
+
+conflicts: []
+
+post_install_hook: ""

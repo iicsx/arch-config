@@ -1,0 +1,17 @@
+description: Language Servers required by ./nvim.yaml
+
+packages:
+  - bash-language-server
+  - lua-language-server
+  - typescript-language-server
+  - yaml-language-server
+  - tinymist
+  - marksman
+
+# Notes
+# Rust's LSP comes with rustup and is a dependency of the top level module hence it is not included here
+
+conflicts: []
+
+post_install_hook: ""
+

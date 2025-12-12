@@ -1,0 +1,14 @@
+description: JavaScript
+
+packages:
+  - nodejs
+  - npm
+  - bun-bin
+  - typescript
+  - typescript-language-server
+  - prettier
+  - prettierd
+
+conflicts: []
+
+post_install_hook: ""

@@ -1,0 +1,36 @@
+description: Misc packages
+
+packages:
+  - amd-ucode
+  - bibata-cursor-theme
+  - breeze-icons
+  - cyme
+  - dmidecode
+  - easy-rsa
+  - efibootmgr
+  - extra-cmake-modules
+  - gcr
+  - glib2-devel
+  - gvfs
+  - kiconthemes
+  - kiconthemes5
+  - libva-utils
+  - lsof
+  - ly
+  - msmtp
+  - noto-fonts-cjk
+  - noto-fonts-emoji
+  - pass
+  - perl-image-exiftool
+  - qt5-wayland
+  - xorg-xhost
+  # Check these
+  - python-adblock
+  - python-pip
+  - python-pywayland
+  - python-setproctitle
+
+
+conflicts: []
+
+post_install_hook: ""

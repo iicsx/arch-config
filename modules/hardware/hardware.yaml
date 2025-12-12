@@ -1,0 +1,14 @@
+# General utilities aimed at hardware compatibility or optimization 
+
+description: General utilities aimed at hardware compatibility or optimization 
+
+packages:
+  - upower
+  - powertop
+  - power-profiles-daemon
+  - thermald
+
+conflicts: []
+
+post_install_hook: ""
+

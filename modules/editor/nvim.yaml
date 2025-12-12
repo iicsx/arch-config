@@ -1,0 +1,21 @@
+description: Packages required by Neovim
+
+packages:
+  - clang
+  - cmake
+  - curl
+  - fzf
+  - git
+  - lua
+  - nodejs # includes npm which is a build dependency for several plugins
+  - ripgrep
+  - tree-sitter-lua
+  - unzip
+  - zip
+
+# Notes
+# Cargo is a build dependency of a handful of plugins but is not included here as it is a dependency of the top level module and also managed by rustup
+
+conflicts: []
+
+post_install_hook: ""

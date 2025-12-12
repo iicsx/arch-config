@@ -1,0 +1,180 @@
+{
+  "appearance": {
+    "transparency": {
+      "enabled": false
+    }
+  },
+  "general": {
+    "battery": {
+      "warnLevels": [
+        {
+          "level": 20,
+          "title": "Low battery",
+          "message": "Please plug in your charger.",
+          "icon": "battery_android_frame_2"
+        },
+        {
+          "level": 10,
+          "title": "Critical battery level",
+          "message": "Battery low, please plug in your charger.",
+          "icon": "battery_android_alert",
+          "critical": true
+        }
+      ],
+      "criticalLevel": 2
+    }
+  },
+  "bar": {
+    "entries": [
+      {
+        "id": "logo",
+        "enabled": true
+      },
+      {
+        "id": "workspaces",
+        "enabled": true
+      },
+      {
+        "id": "spacer",
+        "enabled": true
+      },
+      {
+        "id": "activeWindow",
+        "enabled": false
+      },
+      {
+        "id": "spacer",
+        "enabled": true
+      },
+      {
+        "id": "tray",
+        "enabled": true
+      },
+      {
+        "id": "clock",
+        "enabled": true
+      },
+      {
+        "id": "statusIcons",
+        "enabled": true
+      },
+      {
+        "id": "power",
+        "enabled": true
+      }
+    ],
+    "sizes": {
+      "batteryWidth": 250,
+      "innerHeight": 30,
+      "trayMenuWidth": 300,
+      "windowPreviewSize": 400
+    },
+    "status": {
+      "showKbLayout": true,
+      "showAudio": true,
+      "showLockStatus": false
+    },
+    "workspaces": {
+      "activeIndicator": true,
+      "activeLabel": "󰹻 ",
+      "occupiedLabel": "󰀘 ",
+      "activeTrail": true,
+      "label": "󰐘 ",
+      "occupiedBg": false,
+      "rounded": true,
+      "showWindows": true,
+      "shown": 10
+    },
+    "persistent": false,
+    "showOnHover": true
+  },
+  "border": {
+    "colour": "#131319",
+    "rounding": 20,
+    "thickness": 5
+  },
+  "dashboard": {
+    "mediaUpdateInterval": 500,
+    "sizes": {
+      "dateTimeWidth": 110,
+      "infoIconSize": 25,
+      "infoWidth": 200,
+      "mediaCoverArtSize": 150,
+      "mediaProgressSweep": 180,
+      "mediaProgressThickness": 8,
+      "mediaVisualiserSize": 80,
+      "mediaWidth": 200,
+      "resourceProgessThickness": 10,
+      "resourceSize": 200,
+      "tabIndicatorHeight": 3,
+      "tabIndicatorSpacing": 5,
+      "weatherWidth": 250
+    },
+    "visualiserBars": 45,
+    "weatherLocation": "Frankfurt"
+  },
+  "background": {
+    "desktopClock": {
+      "enabled": true
+    },
+    "enabled": true,
+    "visualiser": {
+      "blur": false,
+      "enabled": false,
+      "autoHide": true,
+      "rounding": 1,
+      "spacing": 1
+    }
+  },
+  "launcher": {
+    "actionPrefix": ":",
+    "enableDangerousActions": true,
+    "maxShown": 8,
+    "maxWallpapers": 9,
+    "sizes": {
+      "itemHeight": 60,
+      "itemWidth": 600,
+      "wallpaperHeight": 200,
+      "wallpaperWidth": 280
+    }
+  },
+  "notifs": {
+    "actionOnClick": false,
+    "clearThreshold": 0.3,
+    "defaultExpireTimeout": 5000,
+    "expandThreshold": 20,
+    "expire": true,
+    "sizes": {
+      "badge": 20,
+      "image": 41,
+      "width": 500
+    }
+  },
+  "osd": {
+    "hideDelay": 2000,
+    "sizes": {
+      "sliderHeight": 150,
+      "sliderWidth": 30
+    }
+  },
+  "paths": {
+    "wallpaperDir": "~/Pictures/Wallpapers",
+    "sessionGif": "~/Pictures/face/pedro.gif"
+  },
+  "session": {
+    "dragThreshold": 30,
+    "sizes": {
+      "button": 90
+    }
+  },
+  "winfo": {
+    "sizes": {
+      "detailsWidth": 500,
+      "heightMult": 0.7
+    }
+  },
+  "services": {
+    "useFahrenheit": false,
+    "useTwelveHourClock": false
+  }
+}

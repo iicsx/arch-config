@@ -1,0 +1,10 @@
+description: Java
+
+packages:
+  - jdk-openjdk
+  - jdk21-openjdk
+  - jdtls
+
+conflicts: []
+
+post_install_hook: ""

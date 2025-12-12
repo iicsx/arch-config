@@ -1,0 +1,13 @@
+description: Development configs
+
+conflicts: []
+
+post_install_hook: ""
+
+package_files:
+  - js.yaml
+  - rust.yaml
+  - sh.yaml
+  - java.yaml
+  - python.yaml
+  - yaml.yaml

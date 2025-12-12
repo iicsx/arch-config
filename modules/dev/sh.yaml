@@ -1,0 +1,9 @@
+description: Bash
+
+packages:
+  - bash
+  - bash-language-server
+
+conflicts: []
+
+post_install_hook: ""

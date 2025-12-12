@@ -1,0 +1,14 @@
+description: System packages
+
+package_files:
+  - audio.yaml
+  - bluetooth.yaml
+  - gnome.yaml
+  - graphics.yaml
+  - mail.yaml
+  - misc.yaml
+  - network.yaml
+
+conflicts: []
+
+post_install_hook: "scripts/enable-ly.sh"
