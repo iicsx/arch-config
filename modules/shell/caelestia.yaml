@@ -7,11 +7,14 @@ packages:
   - quickshell-git
   # requires
   - adw-gtk-theme
+  - brightnessctl
   - papirus-icon-theme
   - qt5ct-kde
   - qt6ct-kde
   - ttf-jetbrains-mono-nerd
   - ttf-material-symbols-variable
+  - xdg-desktop-portal
+  - gpu-screen-recorder
 
 conflicts: []
 
