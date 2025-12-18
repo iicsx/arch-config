@@ -15,6 +15,8 @@ packages:
   - usbguard
   - yt-dlp
   - wf-recorder
+  - inkscape
+  - 7zip
 
 conflicts: []
 
