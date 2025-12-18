@@ -20,11 +20,11 @@ if [ "$EUID" -ne 0 ]; then
 fi
 
 # Enable Ly
-if systemctl is-enabled ly.service &>/dev/null; then
+if systemctl is-enabled ly@tty2.service &>/dev/null; then
   echo -e "${YELLOW}Ly is already enabled${NC}"
 else
   echo -e "${BLUE}Enabling Ly service...${NC}"
-  systemctl enable ly.service
+  systemctl enable ly@tty2.service
   echo -e "${GREEN}Ly enabled${NC}"
 fi
 
