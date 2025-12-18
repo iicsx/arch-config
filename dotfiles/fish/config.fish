@@ -28,11 +28,14 @@ if status is-interactive
 
     starship init fish | source
 
+    zoxide init --cmd cd fish | source
+
     cat ~/.local/state/caelestia/sequences.txt 2> /dev/null
 end
 
 export EDITOR=nvim
 export PATH="/home/nex/.ghcup/bin:$PATH"
+export QT_QPA_PLATFORMTHEME="qt6ct"
 
 alias v='$EDITOR'
 alias vh='$EDITOR .'
@@ -55,8 +58,6 @@ alias qo='qutebrowser -- :open'
 
 alias sudoe='sudo -E -s'
 alias nm='TERM=screen-256color neomutt'
-
-zoxide init --cmd cd fish | source
 
 # function fish_prompt
 #   set_color cyan; echo (pwd)
