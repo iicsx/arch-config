@@ -1,0 +1,8 @@
+# Host-specific config
+config.yaml
+
+# state files
+state/
+
+# backup files
+*.bak
