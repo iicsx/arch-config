@@ -1,15 +1,9 @@
-# Host configuration for arch
-# Virtual Machine
-
 host: honor
+
 description: Honor Magicbook Config
 
-# Import shared configurations (optional)
-# Example:
-# import:
-#   - hosts/shared/laptop-common.yaml
+import: []
 
-# Enabled modules
 enabled_modules:
   - browser/browser
   - dev
@@ -18,21 +12,50 @@ enabled_modules:
   - editor/obsidian
   - gaming/steam
   - hardware/hardware
-  - shell/hyprland 
-  - shell/noctalia 
+  - shell/hyprland
+  - shell/caelestia
   - software/software
   - system
   - terminal/fish
   - terminal/foot
   - virtualization/vm
+  - dev/java
+  - dev/js
+  - dev/python
+  - dev/rust
+  - dev/sh
+  - dev/yaml
+  - system/audio
+  - system/bluetooth
+  - system/gnome
+  - system/graphics
+  - system/mail
+  - system/misc
+  - system/network
 
-# Host-specific packages
 packages: []
-
-# Exclude packages from base or modules
 exclude: []
 
-# Settings
-flatpak_scope: user
-auto_prune: false
+additional_packages: []
 backup_tool: timeshift
+snapper_config: root
+flatpak_scope: user
+
+auto_prune: false
+
+config_backups:
+  enabled: true
+  max_backups: 5
+
+services:
+  enabled:
+  - NetworkManager
+  - bluetooth
+  - cronie
+  - libvirtd
+  - power-profiles-daemon
+  - sshd
+  - usbguard
+  disabled: []
+
+editor: nvim
