@@ -5,5 +5,12 @@ return {
     "Cargo.lock",
     "Cargo.toml",
     ".git"
-  }
+  },
+  settings = {
+    ["rust-analyzer"] = {
+      checkOnSave = {
+        command = "clippy",
+      },
+    },
+  },
 }

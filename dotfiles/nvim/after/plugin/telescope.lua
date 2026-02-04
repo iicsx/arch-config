@@ -3,7 +3,13 @@ local builtin = require('telescope.builtin')
 require("telescope").setup({
   extensions = {
     fzf = {}
-  }
+  },
+  defaults = {
+    mappings = {
+      i = { ["<C-x>"] = require("telescope.actions").select_vertical },
+      n = { ["<C-x>"] = require("telescope.actions").select_vertical },
+    },
+  },
 })
 
 require("telescope").load_extension("fzf")

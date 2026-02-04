@@ -6,9 +6,11 @@ M.plugins = {
   "iicsx/gint-nvim",
 
   -- Tree Sitter
-  "nvim-treesitter/nvim-treesitter",
+  {
+    "nvim-treesitter/nvim-treesitter",
+    branch = "master"
+  },
   "nvim-treesitter/nvim-treesitter-context",
-  "nvim-treesitter/playground",
 
   -- LSP
   "hrsh7th/nvim-cmp",
