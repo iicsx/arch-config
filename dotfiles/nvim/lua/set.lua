@@ -32,3 +32,5 @@ vim.g.mapleader = " "
 vim.g.maplocalleader = "\\"
 
 -- vim.notify = require("notify")
+
+vim.opt.splitright = true
