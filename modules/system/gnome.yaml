@@ -1,6 +1,7 @@
 description: Gnome related compatibility or utility packages
 
 packages:
+  - eog
   - gnome-control-center
   - gnome-desktop
   - gnome-network-displays

@@ -1,0 +1,35 @@
+#!/usr/bin/env bash
+
+STATE_FILE="/tmp/vpnalerts"
+
+IFS=' ' read -ra ADDR <<< "$(nmcli connection show --active | grep vpn)"
+openvpn_connection="${ADDR[@]}"
+
+IFS=' ' read -ra ADDR <<< "$(nmcli connection show --active | grep wireguard)"
+wireguard_connection="${ADDR[@]}"
+
+last_notified="off"
+if [[ -f "$STATE_FILE" ]]; then
+  last_notified=$(cat "$STATE_FILE")
+fi
+
+if [[ $last_notified == "off" ]] && [[ -n $openvpn_connection ]]; then
+  notify-send "VPN Active (OpenVPN)" -u critical
+  echo "on" > $STATE_FILE
+fi 
+
+if [[ $last_notified == "off" ]] && [[ -n $wireguard_connection ]]; then
+  notify-send "VPN Active (Wireguard)" -u critical
+  echo "on" > $STATE_FILE
+fi 
+
+if 
+  [[ $last_notified == "on" ]] && 
+  [[ -z $openvpn_connection ]] && 
+  [[ -z $wireguard_connection ]]; 
+then
+  notify-send "VPN Disabled" -u critical
+  echo "off" > $STATE_FILE
+fi
+
+

@@ -1,6 +1,7 @@
 description: Steam
 
 packages:
+  - ds4drv
   - steam
   - lib32-vulkan-mesa-implicit-layers
   - lib32-vulkan-icd-loader

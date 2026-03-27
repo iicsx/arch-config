@@ -1,0 +1,9 @@
+[Unit]
+Description=VPN Activation Alerts
+
+[Timer]
+OnBootSec=10sec
+OnUnitActiveSec=10sec
+
+[Install]
+WantedBy=default.target

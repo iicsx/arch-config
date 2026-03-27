@@ -19,8 +19,17 @@ function fish_greeting
     echo "   \ \_\  \ \_\  \ \_____\  \/\_____\   /\_\/\_\ "
     echo "    \/_/   \/_/   \/_____/   \/_____/   \/_/\/_/ "
     set_color normal
-    fastfetch --key-padding-left 5
+    fastfetch --key-padding-left 7
 end
+
+function frombin
+  echo 'obase=10;ibase=2;'$argv[1] | bc
+end
+
+function tobin
+  echo 'obase=2;ibase=10;'$argv[1] | bc
+end
+
 
 if status is-interactive
     # Commands to run in interactive sessions can go here
@@ -58,6 +67,8 @@ alias qo='qutebrowser -- :open'
 
 alias sudoe='sudo -E -s'
 alias nm='TERM=screen-256color neomutt'
+
+alias cl='find . -type f -exec wc -l {} +'
 
 # function fish_prompt
 #   set_color cyan; echo (pwd)

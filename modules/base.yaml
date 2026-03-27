@@ -16,6 +16,7 @@ packages:
 
   # Firmware (usually needed)
   - linux-firmware
+  - linux-headers
 
   # Bootloader
   - grub

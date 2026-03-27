@@ -1,0 +1,8 @@
+[Unit]
+Description=VPN Activation Alerts
+
+[Service]
+Type=oneshot
+ExecStart=%h/.config/arch-config/services/vpnalerts
+
+

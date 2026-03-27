@@ -2,8 +2,12 @@ local M = {}
 
 M.plugins = {
   -- Git integration
-  "tpope/vim-fugitive",
-  "iicsx/gint-nvim",
+  {
+    "iicsx/gint-nvim",
+    dependencies = {
+      "tpope/vim-fugitive",
+    }
+  },
 
   -- Tree Sitter
   {
@@ -64,6 +68,7 @@ M.plugins = {
   },
   "nvimdev/dashboard-nvim",
   "norcalli/nvim-colorizer.lua",
+  "iicsx/nvim-fox",
 
   -- Formatting
   "stevearc/conform.nvim",

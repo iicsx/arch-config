@@ -3,7 +3,7 @@ description: JavaScript
 packages:
   - nodejs
   - npm
-  - bun-bin
+  - bun
   - typescript
   - typescript-language-server
   - prettier

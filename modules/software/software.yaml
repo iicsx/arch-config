@@ -1,22 +1,29 @@
 description: Various Applications
 
 packages:
-  - fragments # BitTorrent Client
-  - qutebrowser
-  - thorium-browser-bin # Rarely needed
-  - onlyoffice-bin
-  - remmina # RDP Client
-  - freerdp # Dependency of remmina
+  - 7zip
+  - bat
   - btop
   - dua-cli # Disk management tool
+  - fragments # BitTorrent Client
+  - freerdp # Dependency of remmina
+  - hledger
+  - hledger-ui
+  - inkscape
+  - khal
+  - macchanger
   - mpv
+  - mullvad-vpn
+  - onlyoffice-bin
+  - qutebrowser
+  - remmina # RDP Client
+  - thorium-browser-bin # Rarely needed
   - typst
   - unrar
   - usbguard
+  - vesktop-bin
+  - wf-recorder-git
   - yt-dlp
-  - wf-recorder
-  - inkscape
-  - 7zip
 
 conflicts: []
 

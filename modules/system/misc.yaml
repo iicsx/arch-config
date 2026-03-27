@@ -4,6 +4,8 @@ packages:
   - amd-ucode
   - bibata-cursor-theme
   - breeze-icons
+  - cups
+  - cnijfilter2 # canon printer support
   - cyme
   - dmidecode
   - easy-rsa
