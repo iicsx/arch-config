@@ -13,9 +13,9 @@ local lsp_servers = {
 }
 vim.lsp.enable(lsp_servers)
 
-vim.lsp.handlers["textDocument/hover"] = vim.lsp.with(vim.lsp.handlers.hover, { border = "rounded" })
+vim.lsp.handlers["textDocument/hover"] = function() vim.lsp.buf.hover { border = "rounded" } end
 
-vim.lsp.handlers["textDocument/signatureHelp"] = vim.lsp.with(vim.lsp.handlers.signature_help, { border = "rounded" })
+vim.lsp.handlers["textDocument/signatureHelp"] = function() vim.lsp.buf.handlers.signature_help { border = "rounded" } end
 
 vim.api.nvim_create_autocmd('LspAttach', {
   callback = function(ev)
