@@ -67,7 +67,7 @@ M.plugins = {
     },
   },
   "nvimdev/dashboard-nvim",
-  "norcalli/nvim-colorizer.lua",
+  "uga-rosa/ccc.nvim",
   "iicsx/nvim-fox",
 
   -- Formatting
