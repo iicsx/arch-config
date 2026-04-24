@@ -45,7 +45,7 @@ M.plugins = {
   "Tsuzat/NeoSolarized.nvim",
   "Yazeed1s/oh-lucy.nvim",
   "sainnhe/sonokai",
-  "folke/tokyonight.nvim",
+  "shrik3/tokyonight.nvim",
   "ellisonleao/gruvbox.nvim",
 
   -- Visual

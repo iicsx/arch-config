@@ -20,6 +20,15 @@ vim.keymap.set("n", "<leader><tab>", ":quit<CR>")
 vim.keymap.set("n", "<C-S-J>", "o<Esc>k")
 vim.keymap.set("n", "<C-S-K>", "O<Esc>j")
 
+vim.keymap.set("i", "<Esc>", "<Esc>:nohlsearch<CR>", { silent = true })
+
+vim.keymap.set("n", "<leader>e", function()
+  vim.diagnostic.open_float(nil, {
+    border = "rounded",
+    prefix = " "
+  })
+end)
+
 vim.keymap.set("n", "<leader>n", ":bnext<CR>")
 vim.keymap.set("n", "<leader>b", ":bprevious<CR>")
 vim.keymap.set("n", "<leader>t", ":enew<CR>")

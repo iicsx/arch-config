@@ -52,6 +52,39 @@ local function remove_git_background()
   remove_background(elements)
 end
 
+local function remove_virtual_text_background()
+  local elements = {
+    "DiagnosticVirtualTextError",
+    "DiagnosticVirtualTextWarn",
+    "DiagnosticVirtualTextInfo",
+    "DiagnosticVirtualTextHint",
+    "DiagnosticVirtualTextOk",
+  }
+
+  -- this preserves the text color and only removes background colors
+  for _, group in ipairs(elements) do
+    local hl = vim.api.nvim_get_hl(0, { name = group })
+    hl.bg = "NONE"
+    vim.api.nvim_set_hl(0, group, hl)
+  end
+end
+
+local function remove_notify_background()
+  local notify_clear = {
+    "NotifyBackground",
+    "NotifyERRORBody", "NotifyWARNBody", "NotifyINFOBody", "NotifyDEBUGBody", "NotifyTRACEBody",
+    "NotifyERRORBorder", "NotifyWARNBorder", "NotifyINFOBorder", "NotifyDEBUGBorder", "NotifyTRACEBorder",
+    -- numbered variants (idk man)
+    "NotifyERRORTitle7", "NotifyERRORBorder7", "NotifyERRORBody7", "NotifyERRORIcon7",
+    "NotifyINFOTitle14", "NotifyINFOBorder14", "NotifyINFOBody14", "NotifyINFOIcon14",
+    "NotifyWARNTitle27", "NotifyWARNBorder27", "NotifyWARNBody27", "NotifyWARNIcon27",
+    "NotifyERRORTitle32", "NotifyERRORBorder32", "NotifyERRORBody32", "NotifyERRORIcon32",
+  }
+  for _, g in ipairs(notify_clear) do
+    pcall(vim.api.nvim_set_hl, 0, g, { bg = "none" })
+  end
+end
+
 local function remove_misc_backgrounds(elements)
   remove_background(elements)
 end
@@ -173,7 +206,7 @@ local function apply_buffer_colors()
 end
 
 local function set_diagnostics_colors()
-  vim.api.nvim_set_hl(0, "DiagnosticSignError", { fg = "#ff5555", bg = "NONE" })
+  vim.api.nvim_set_hl(0, "DiagnosticSignError", { fg = "#ff2222", bg = "NONE" })
   vim.api.nvim_set_hl(0, "DiagnosticSignWarn", { fg = "#f1fa8c", bg = "NONE" })
   vim.api.nvim_set_hl(0, "DiagnosticSignInfo", { fg = "#8be9fd", bg = "NONE" })
   vim.api.nvim_set_hl(0, "DiagnosticSignHint", { fg = "#50fa7b", bg = "NONE" })
@@ -192,6 +225,8 @@ vim.api.nvim_create_autocmd("ColorScheme", {
     remove_telescope_background()
     remove_lsp_background()
     remove_git_background()
+    remove_notify_background()
+    remove_virtual_text_background()
 
     remove_misc_backgrounds({
       "Normal",

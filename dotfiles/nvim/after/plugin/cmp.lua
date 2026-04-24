@@ -27,7 +27,7 @@ cmp.setup({
   }),
   formatting = {
     format = lspkind.cmp_format({
-      mode = "text", -- I think cmp may show icons by default so chosing any 'symbol' based option shows two symbols per entry
+      -- mode = "text", -- I think cmp may show icons by default so chosing any 'symbol' based option shows two symbols per entry
       maxwidth = {
         menu = 50,
         abbr = 50,

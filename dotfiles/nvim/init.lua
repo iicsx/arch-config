@@ -13,7 +13,7 @@ if not WITH_CATS then
   require("lze")
 end
 
-local theme_index = 3
+local theme_index = 5
 local themes = {
   "poimandres",
   "NeoSolarized",
@@ -27,7 +27,10 @@ DEFAULT_BAR_COLOR = "none"
 
 vim.diagnostic.config({
   virtual_text = {
-    prefix = "●",
+    prefix = "",
+    severity = {
+      min = vim.diagnostic.severity.WARN, -- prevent duplicate icons
+    },
   },
 })
 
