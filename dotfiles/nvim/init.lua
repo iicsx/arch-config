@@ -25,14 +25,14 @@ local themes = {
 DEFAULT_COLOR = themes[theme_index]
 DEFAULT_BAR_COLOR = "none"
 
-vim.diagnostic.config({
-  virtual_text = {
-    prefix = "",
-    severity = {
-      min = vim.diagnostic.severity.WARN, -- prevent duplicate icons
-    },
-  },
-})
+-- vim.diagnostic.config({
+--   virtual_text = {
+--     prefix = "",
+--     severity = {
+--       min = vim.diagnostic.severity.WARN, -- prevent duplicate icons
+--     },
+--   },
+-- })
 
 function CC(index)
   if index <= 0 or index > #themes then
