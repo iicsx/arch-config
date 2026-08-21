@@ -13,17 +13,15 @@ hl.env("INPUT_METHOD", "fcitx")
 -- ############ Themes #############
 hl.env("QT_QPA_PLATFORM", "wayland")
 hl.env("QT_QPA_PLATFORMTHEME", "qt5ct")
--- env = QT_STYLE_OVERRIDE,kvantum
--- env = WLR_NO_HARDWARE_CURSORS, 1
 hl.env("QT_WAYLAND_DISABLE_WINDOWDECORATION", "1")
 hl.env("QT_AUTO_SCREEN_SCALE_FACTOR", "1")
 hl.env("XCURSOR_THEME", "Bibata-Modern-Classic")
 hl.env("XCURSOR_SIZE", "24")
 
 -- ######## Toolkit backends ########
--- TODO: manual review — malformed env on line 22: GDK_BACKEND, wayland,x11
 hl.env("QT_QPA_PLATFORM", "wayland;xcb")
--- TODO: manual review — malformed env on line 24: SDL_VIDEODRIVER, wayland,x11
+hl.env("GTK_BACKEND", "wayland")
+hl.env("SDL_VIDEODRIVER", "wayland")
 hl.env("CLUTTER_BACKEND", "wayland")
 hl.env("ELECTRON_OZONE_PLATFORM_HINT", "auto")
 

@@ -119,16 +119,6 @@ hl.animation({
   style = "slidevert",
 })
 
--- TODO: manual review — plugin section ''. The new Lua API exposes plugins via hl.plugin.<name>(...) — wire up per the plugin's docs.
---[[
-  --     hyprexpo {
-  --         columns = 3
-  --         gap_size = 10
-  --         bg_col = rgb(000000)
-  --         workspace_method = center current
-  --     }
-]]
-
 hl.config({
   input = {
     -- Keyboard: Add a layout and uncomment kb_options for Win+Space switching shortcut
@@ -145,6 +135,9 @@ hl.config({
     },
     special_fallthrough = true,
     follow_mouse = 1,
+  },
+  cursor = {
+    inactive_timeout = 5,
   },
   binds = {
     -- focus_window_on_workspace_c# For Auto-run stuff see execs.confhange = true

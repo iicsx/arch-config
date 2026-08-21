@@ -18,3 +18,6 @@ require("hyprland.colors")
 require("hyprland.keybinds")
 -- Source: ~/.config/hypr/noctalia/noctalia-colors.conf — convert this file to Lua and ensure it is on Lua's package.path.
 require("noctalia.noctalia-colors")
+
+-- For Noctalia Color templates
+require("noctalia").apply_theme()

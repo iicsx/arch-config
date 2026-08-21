@@ -80,8 +80,8 @@ hl.bind("SUPER+SHIFT + Down", hl.dsp.window.move({ direction = "d" }))
 -- Positioning mode
 hl.bind("SUPER + V", hl.dsp.window.float({ action = "toggle" }))
 -- hl.bind("SUPER+ALT + F", hl.dsp.window.fullscreen_state("0 3"))
-hl.bind("SUPER + F", hl.dsp.window.fullscreen(0))
-hl.bind("SUPER + D", hl.dsp.window.fullscreen(1))
+hl.bind("SUPER + F", hl.dsp.window.fullscreen({ mode = "fullscreen" }))
+hl.bind("SUPER + D", hl.dsp.window.fullscreen({ mode = "maximized" }))
 
 --!
 --#! Workspace navigation
@@ -122,17 +122,26 @@ hl.bind("SUPER + mouse:275", hl.dsp.workspace.toggle_special(""))
 --#! Workspace management
 -- Move window to workspace SUPER + ALT + [0-9]
 --/# bind = SUPER+ALT, Hash,, # Window: move to workspace # (1, 2, 3, 4, ...)
-hl.bind("SUPER+SHIFT + 1", hl.dsp.exec_cmd("~/.config/hypr/scripts/hyprland/workspace_action.sh movetoworkspacesilent 1"))
-hl.bind("SUPER+SHIFT + 2", hl.dsp.exec_cmd("~/.config/hypr/scripts/hyprland/workspace_action.sh movetoworkspacesilent 2"))
-hl.bind("SUPER+SHIFT + 3", hl.dsp.exec_cmd("~/.config/hypr/scripts/hyprland/workspace_action.sh movetoworkspacesilent 3"))
-hl.bind("SUPER+SHIFT + 4", hl.dsp.exec_cmd("~/.config/hypr/scripts/hyprland/workspace_action.sh movetoworkspacesilent 4"))
-hl.bind("SUPER+SHIFT + 5", hl.dsp.exec_cmd("~/.config/hypr/scripts/hyprland/workspace_action.sh movetoworkspacesilent 5"))
-hl.bind("SUPER+SHIFT + 6", hl.dsp.exec_cmd("~/.config/hypr/scripts/hyprland/workspace_action.sh movetoworkspacesilent 6"))
-hl.bind("SUPER+SHIFT + 7", hl.dsp.exec_cmd("~/.config/hypr/scripts/hyprland/workspace_action.sh movetoworkspacesilent 7"))
-hl.bind("SUPER+SHIFT + 8", hl.dsp.exec_cmd("~/.config/hypr/scripts/hyprland/workspace_action.sh movetoworkspacesilent 8"))
-hl.bind("SUPER+SHIFT + 9", hl.dsp.exec_cmd("~/.config/hypr/scripts/hyprland/workspace_action.sh movetoworkspacesilent 9"))
+hl.bind("SUPER+SHIFT + 1",
+  hl.dsp.exec_cmd("~/.config/hypr/scripts/hyprland/workspace_action.sh window.move workspace 1 follow false"))
+hl.bind("SUPER+SHIFT + 2",
+  hl.dsp.exec_cmd("~/.config/hypr/scripts/hyprland/workspace_action.sh window.move workspace 2 follow false"))
+hl.bind("SUPER+SHIFT + 3",
+  hl.dsp.exec_cmd("~/.config/hypr/scripts/hyprland/workspace_action.sh window.move workspace 3 follow false"))
+hl.bind("SUPER+SHIFT + 4",
+  hl.dsp.exec_cmd("~/.config/hypr/scripts/hyprland/workspace_action.sh window.move workspace 4 follow false"))
+hl.bind("SUPER+SHIFT + 5",
+  hl.dsp.exec_cmd("~/.config/hypr/scripts/hyprland/workspace_action.sh window.move workspace 5 follow false"))
+hl.bind("SUPER+SHIFT + 6",
+  hl.dsp.exec_cmd("~/.config/hypr/scripts/hyprland/workspace_action.sh window.move workspace 6 follow false"))
+hl.bind("SUPER+SHIFT + 7",
+  hl.dsp.exec_cmd("~/.config/hypr/scripts/hyprland/workspace_action.sh window.move workspace 7 follow false"))
+hl.bind("SUPER+SHIFT + 8",
+  hl.dsp.exec_cmd("~/.config/hypr/scripts/hyprland/workspace_action.sh window.move workspace 8 follow false"))
+hl.bind("SUPER+SHIFT + 9",
+  hl.dsp.exec_cmd("~/.config/hypr/scripts/hyprland/workspace_action.sh window.move workspace 9 follow false"))
 hl.bind("SUPER+SHIFT + 0",
-  hl.dsp.exec_cmd("~/.config/hypr/scripts/hyprland/workspace_action.sh movetoworkspacesilent 10"))
+  hl.dsp.exec_cmd("~/.config/hypr/scripts/hyprland/workspace_action.sh move workspace 10 follow false"))
 
 hl.bind("CTRL+SUPER+SHIFT + Up", hl.dsp.window.move({ workspace = "special", silent = true }))
 
