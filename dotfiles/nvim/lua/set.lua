@@ -34,3 +34,5 @@ vim.g.maplocalleader = "\\"
 -- vim.notify = require("notify")
 
 vim.opt.splitright = true
+
+vim.opt.conceallevel = 1

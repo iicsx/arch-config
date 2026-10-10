@@ -12,7 +12,7 @@ M.plugins = {
   -- Tree Sitter
   {
     "nvim-treesitter/nvim-treesitter",
-    branch = "master"
+    branch = "main"
   },
   "nvim-treesitter/nvim-treesitter-context",
 
@@ -27,7 +27,7 @@ M.plugins = {
   "stevearc/oil.nvim",
   {
     "nvim-telescope/telescope.nvim",
-    version = "0.1.4",
+    -- version = "0.1.4",
     dependencies = {
       "nvim-lua/plenary.nvim",
       {
@@ -86,7 +86,6 @@ M.plugins = {
     "MeanderingProgrammer/markdown.nvim",
     dependencies = {
       { "nvim-tree/nvim-web-devicons" },
-      { "nvim-treesitter/nvim-treesitter" },
     },
   },
   -- Obsidian specifics
@@ -104,6 +103,10 @@ M.plugins = {
   -- AI Integration
   -- "robitx/gp.nvim",
   -- 'github/copilot.vim',
+  {
+    "yetone/avante.nvim",
+    build = "make"
+  }
 }
 
 return M
