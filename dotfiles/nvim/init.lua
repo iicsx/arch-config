@@ -9,9 +9,6 @@ require("lsp")
 require("remap")
 
 WITH_CATS = module_exists("nixCats")
-if not WITH_CATS then
-  require("lze")
-end
 
 local theme_index = 5
 local themes = {
@@ -24,6 +21,12 @@ local themes = {
 
 DEFAULT_COLOR = themes[theme_index]
 DEFAULT_BAR_COLOR = "none"
+
+if not WITH_CATS then
+  require("config.lazy")
+end
+
+require("config.colors")
 
 -- vim.diagnostic.config({
 --   virtual_text = {
