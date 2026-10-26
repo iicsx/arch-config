@@ -1,0 +1,11 @@
+description: Applications required for work
+
+packages:
+  - cisco-secure-client
+  - keepassxc
+  - nextcloud-client
+  - vpnc
+  - zoom
+  - zotero-bin
+
+conflicts: []

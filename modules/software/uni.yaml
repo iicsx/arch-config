@@ -1,0 +1,9 @@
+description: Applications required for uni
+
+packages:
+  # - eduroam
+  -  geteduroam
+
+conflicts: []
+
+post_install_hook: ""

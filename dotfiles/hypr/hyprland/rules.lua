@@ -58,6 +58,15 @@ hl.window_rule({
 
 hl.window_rule({
   match = {
+    class = "^(com.cisco.secureclient.gui)$",
+  },
+  float = true,
+  center = true,
+  size = "(monitor_w*0.66) (monitor_h*0.66)",
+})
+
+hl.window_rule({
+  match = {
     class = "^(org.gnome.NetworkDisplays)$",
   },
   float = true,

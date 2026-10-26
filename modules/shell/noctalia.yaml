@@ -1,7 +1,7 @@
 description: Noctalia Desktop Shell
 
 packages:
-  - noctalia-shell
+  - noctalia
   - adw-gtk-theme
   - brightnessctl
   - cava
@@ -14,7 +14,6 @@ packages:
   - python-pywalfox
   - qt5ct
   - qt6ct
-  - quickshell
   - wlsunset
   - xdg-desktop-portal
 

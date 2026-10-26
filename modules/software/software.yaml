@@ -4,6 +4,7 @@ packages:
   - 7zip
   - bat
   - btop
+  - dcli-arch-git
   - dua-cli # Disk management tool
   - fragments # BitTorrent Client
   - freerdp # Dependency of remmina

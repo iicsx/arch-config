@@ -4,6 +4,7 @@ packages:
   - jdk-openjdk
   - jdk21-openjdk
   - jdtls
+  - gradle
 
 conflicts: []
 

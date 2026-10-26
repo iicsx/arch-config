@@ -35,7 +35,7 @@ DEFAULT_BAR_COLOR = "none"
 -- })
 
 function CC(index)
-  if index <= 0 or index > #themes then
+  if index == nil or index <= 0 or index > #themes then
     return vim.notify("Could not change theme, index out of range. Current theme: " .. themes[theme_index])
   end
 

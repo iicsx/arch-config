@@ -10,6 +10,7 @@ packages:
   - nodejs # includes npm which is a build dependency for several plugins
   - ripgrep
   - tree-sitter-lua
+  - tree-sitter-rust
   - unzip
   - zip
 

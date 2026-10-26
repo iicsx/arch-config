@@ -2,6 +2,11 @@ description: Rust
 
 packages:
   - rustup
+  - mingw-w64-binutils
+  - mingw-w64-crt
+  - mingw-w64-headers
+  - mingw-w64-winpthreads
+  - mingw-w64-gcc
 
 conflicts: []
 

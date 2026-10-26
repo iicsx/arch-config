@@ -12,6 +12,7 @@ packages:
    - networkmanager-openvpn
    - nm-connection-editor
    - openbsd-netcat
+   - openresolv
    - openssh
    - openvpn
    - traceroute

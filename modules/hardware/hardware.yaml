@@ -3,6 +3,8 @@
 description: General utilities aimed at hardware compatibility or optimization 
 
 packages:
+  - android-tools
+  - android-udev
   - upower
   - powertop
   - power-profiles-daemon

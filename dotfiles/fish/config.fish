@@ -62,6 +62,7 @@ alias gb='git branch'
 alias gc='git commit'
 alias ga='git add'
 alias glo='git log --oneline'
+alias gbc='git branch --show-current'
 
 alias qo='qutebrowser -- :open'
 

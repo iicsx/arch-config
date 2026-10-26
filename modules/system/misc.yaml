@@ -23,6 +23,7 @@ packages:
   - noto-fonts-cjk
   - noto-fonts-emoji
   - pass
+  - pacman-contrib
   - perl-image-exiftool
   - qt5-wayland
   - xorg-xhost

@@ -4,6 +4,7 @@ packages:
   - isync
   - goimapnotify
   - mutt-wizard
+  - lynx # for email rendering
 
 conflicts: []
 

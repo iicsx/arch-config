@@ -101,8 +101,8 @@ M.plugins = {
   "nvim-mini/mini.ai",
 
   -- AI Integration
-  -- "robitx/gp.nvim",
-  -- 'github/copilot.vim',
+  "robitx/gp.nvim",
+  'github/copilot.vim',
   {
     "yetone/avante.nvim",
     build = "make"
