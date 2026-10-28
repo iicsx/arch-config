@@ -1,0 +1,36 @@
+{
+  "enabled": true,
+  "inlineFooter": true,
+  "settingsLanguage": "en",
+  "cursorStyle": "block",
+  "icons": {
+    "mode": "nerd"
+  },
+  "footerSegments": {
+    "cwd": true,
+    "hostname": false,
+    "sessionName": false,
+    "gitBranch": true,
+    "gitStatus": true,
+    "gitCommit": false,
+    "runtime": true,
+    "context": true,
+    "tokens": true,
+    "cost": true,
+    "extensionStatuses": true,
+    "capitalizeProviderName": true,
+    "nerdIconSpacing": true
+  },
+  "telemetry": {
+    "enabled": false,
+    "tps": false,
+    "ttft": false,
+    "duration": false,
+    "tokens": false,
+    "stalls": false,
+    "cost": false
+  },
+  "thinkingPeek": {
+    "lines": 1
+  }
+}

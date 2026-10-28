@@ -1,0 +1,16 @@
+{
+  "lastChangelogVersion": "1.4.0",
+  "packages": [
+    "npm:@maplezzk/pi-interactive-subagents",
+    "npm:pi-open-tui"
+  ],
+  "defaultProvider": "openai-codex",
+  "defaultModel": "gpt-6-luna",
+  "theme": "dark",
+  "enableInstallTelemetry": false,
+  "quietStartup": true,
+  "terminal": {
+    "showTerminalProgress": true
+  },
+  "tuiMode": "fullscreen"
+}

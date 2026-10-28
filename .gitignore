@@ -6,3 +6,6 @@ state/
 
 # backup files
 *.bak
+
+dotfiles/.pi/agent/sessions
+dotfiles/.pi/agent/tmp
