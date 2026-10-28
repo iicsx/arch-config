@@ -1,7 +1,0 @@
-[Unit]
-Description=Battery Level Check Script
-
-[Service]
-Type=oneshot
-ExecStart=%h/.config/caelestia/scripts/power-alerts.sh
-
