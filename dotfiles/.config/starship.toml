@@ -11,13 +11,13 @@ add_newline = false
 # $character
 # """
 format = """
-$username$hostname • $directory $git_branch
+$username$hostname • $directory $time $git_branch
 $character
 """
 
 # Replace the "❯" symbol in the prompt with "➜"
 [character]                            # The name of the module we are configuring is "character"
-success_symbol = "[• ](bold fg:#fab6ad) "
+success_symbol = "[• ](bold fg:blue) "
 error_symbol = "[• 󰅙](bold fg:red) "
 
 # Disable the package module, hiding it from the prompt completely
@@ -25,11 +25,11 @@ error_symbol = "[• 󰅙](bold fg:red) "
 disabled = true
 
 [git_branch]
-style = "bg:#ffb4ab fg:#620f0d"
+style = "bg:blue fg:red"
 symbol = "󰘬"
 truncation_length = 4
 truncation_symbol = ""
-format = "• [](bold bg:transparent fg:#ffb4ab)[$symbol $branch(:$remote_branch)](fg:#620f0d bg:#ffb4ab)[ ](bold bg:transparent fg:#ffb4ab)"
+format = "• [](bold bg:transparent fg:blue)[$symbol $branch(:$remote_branch)](fg:black bg:blue)[ ](bold bg:transparent fg:blue)"
 
 [git_commit]
 commit_hash_length = 4
@@ -47,13 +47,13 @@ diverged = " 😵 "
 untracked = " 🤷 ‍"
 stashed = " 📦 "
 modified = " 📝 "
-staged = '[++\($count\)](#ffb4ab)'
+staged = '[++\($count\)]($blue)'
 renamed = " ✍️ "
 deleted = " 🗑 "
 
 [hostname]
 ssh_only = false
-format =  "[/$hostname](bg:#ffb4ab bold fg:#620f0d)[](bold fg:#ffb4ab )"
+format =  "[/$hostname](bg:blue bold fg:black)[](bold fg:blue )"
 trim_at = ".companyname.com"
 disabled = false
 
@@ -64,27 +64,27 @@ disabled = false
 disabled = true
 threshold = -1
 symbol = " "
-style = "bold dimmed #ffb4ab"
+style = "bold dimmed green"
 
 [time]
-disabled = true
-format = '🕙[\[ $time \]]($style) '
+disabled = false
+format = '• [](bold bg:transparent fg:blue)[   $time ](bg:blue bold fg:black)[](bold bg:transparent fg:blue)'
 time_format = "%T"
 
 [username]
-style_user = "bold bg:#ffb4ab fg:#620f0d"
+style_user = "bold bg:blue fg:black"
 style_root = "red bold"
-format = "[](bold bg:transparent fg:#ffb4ab)[$user]($style)"
+format = "[](bold bg:transparent fg:blue)[$user]($style)"
 disabled = false
 show_always = true
 
 [directory]
 home_symbol = "  "
 read_only = "  "
-style = "bg:#ffb4ab fg:#620f0d"
+style = "bg:blue fg:black"
 truncation_length = 6
 truncation_symbol = "••/"
-format = '[](bold bg:transparent fg:#ffb4ab)[$path ]($style)[](bold bg:transparent fg:#ffb4ab)'
+format = '[](bold bg:transparent fg:blue)[$path ]($style)[](bold bg:transparent fg:blue)'
 
 
 [directory.substitutions]
@@ -97,7 +97,7 @@ format = '[](bold bg:transparent fg:#ffb4ab)[$path ]($style)[](bold bg:tra
 
 [cmd_duration]
 min_time = 0
-format = '[](bold bg:transparent fg:#ffb4ab)[ $duration](bold bg:#ffb4ab fg:#620f0d)[](bold bg:transparent fg:#ffb4ab) •• '
+format = '[](bold bg:transparent fg:blue)[ $duration](bold bg:blue fg:black)[](bold bg:transparent fg:blue) •• '
 
 # >>> NOCTALIA STARSHIP PALETTE >>>
 # Noctalia Starship Palette
@@ -105,40 +105,40 @@ format = '[](bold bg:transparent fg:#ffb4ab)[ $duration](bold bg:#ffb4ab f
 
 [palettes.noctalia]
 # Standard colors
-blue      = "#d6c0d7"
+blue      = "#f4ba96"
 red       = "#ffb4ab"
-green     = "#b8c8da"
-yellow    = "#c1c7cf"
-cyan      = "#c1c7cf"
-magenta   = "#b8c8da"
-white     = "#e4e2e3"
-black     = "#43474c"
+green     = "#f0b7ca"
+yellow    = "#dcbfc7"
+cyan      = "#dcbfc7"
+magenta   = "#f0b7ca"
+white     = "#eae0e1"
+black     = "#504447"
 
 # Extended palette (Catppuccin-compatible names)
-rosewater = "#c1c7cf"
+rosewater = "#dcbfc7"
 flamingo  = "#ffb4ab"
-pink      = "#b8c8da"
-mauve     = "#b8c8da"
+pink      = "#f0b7ca"
+mauve     = "#f0b7ca"
 maroon    = "#ffb4ab"
-peach     = "#c1c7cf"
-teal      = "#c1c7cf"
-sky       = "#c1c7cf"
-sapphire  = "#d6c0d7"
-lavender  = "#b8c8da"
+peach     = "#dcbfc7"
+teal      = "#dcbfc7"
+sky       = "#dcbfc7"
+sapphire  = "#f4ba96"
+lavender  = "#f0b7ca"
 
 # Text shades
-text      = "#e4e2e3"
-subtext1  = "#e4e2e3"
-subtext0  = "#8e9196"
+text      = "#eae0e1"
+subtext1  = "#eae0e1"
+subtext0  = "#9c8d91"
 
 # Surface shades
-overlay2  = "#8e9196"
-overlay1  = "#8e9196"
-overlay0  = "#43474c"
-surface2  = "#43474c"
-surface1  = "#43474c"
-surface0  = "#131314"
-base      = "#131314"
-mantle    = "#131314"
-crust     = "#131314"
+overlay2  = "#9c8d91"
+overlay1  = "#9c8d91"
+overlay0  = "#504447"
+surface2  = "#504447"
+surface1  = "#504447"
+surface0  = "#161213"
+base      = "#161213"
+mantle    = "#161213"
+crust     = "#161213"
 # <<< NOCTALIA STARSHIP PALETTE <<<

@@ -13,13 +13,12 @@ hl.window_rule({
   no_blur = true
 })
 
--- Uncomment to apply global transparency to all windows:
-hl.window_rule({
-  match = {
-    class = ".*",
-  },
-  opacity = "0.89 override",
-})
+-- hl.window_rule({
+--   match = {
+--     class = ".*",
+--   },
+--   opacity = "0.89 override",
+-- })
 
 -- Floating
 hl.window_rule({
@@ -35,7 +34,7 @@ hl.window_rule({
   },
   float = true,
   size = "(monitor_w*0.25) (monitor_h*0.4)",
-  move = "cursor_x cursor_y",
+  move = "((cursor_x)-(monitor_w*0.125)) ((cursor_y)-(monitor_h*0.2))",
 })
 
 hl.window_rule({
