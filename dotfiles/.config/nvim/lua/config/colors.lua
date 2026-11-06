@@ -217,6 +217,10 @@ function SC(color)
   color = color or DEFAULT_COLOR
   DEFAULT_COLOR = color
   vim.cmd.colorscheme(color)
+
+  vim.api.nvim_set_hl(0, "FloatBorder", {
+    fg = "#6386C9",
+  })
 end
 
 vim.api.nvim_create_autocmd("ColorScheme", {
@@ -242,5 +246,9 @@ vim.api.nvim_create_autocmd("ColorScheme", {
 
     apply_buffer_colors()
     set_diagnostics_colors()
+
+    vim.api.nvim_set_hl(0, "FloatBorder", {
+      fg = "#6386C9",
+    })
   end
 })

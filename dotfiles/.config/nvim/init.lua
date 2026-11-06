@@ -28,15 +28,6 @@ end
 
 require("config.colors")
 
--- vim.diagnostic.config({
---   virtual_text = {
---     prefix = "",
---     severity = {
---       min = vim.diagnostic.severity.WARN, -- prevent duplicate icons
---     },
---   },
--- })
-
 function CC(index)
   if index == nil or index <= 0 or index > #themes then
     return vim.notify("Could not change theme, index out of range. Current theme: " .. themes[theme_index])
