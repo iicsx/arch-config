@@ -23,8 +23,7 @@
 
 hl.on("hyprland.start", function()
   hl.exec_cmd("swww-daemon --format xrgb")
-  hl.exec_cmd("noctalia &")
-  -- hl.exec_cmd("noctalia")
+  hl.exec_cmd("noctalia")
   hl.exec_cmd("blueman-applet &")
   hl.exec_cmd("fcitx5")
   hl.exec_cmd("gnome-keyring-daemon --start --components=secrets")

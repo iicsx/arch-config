@@ -14,6 +14,8 @@ hl.bind("XF86AudioLowerVolume",
 --#! General
 hl.bind("SUPER + Q", hl.dsp.exec_cmd("foot"))
 hl.bind("SUPER+SHIFT + Q", hl.dsp.exec_cmd("foot --title floating-foot"))
+-- open foot and use the pi command
+hl.bind("SUPER + P", hl.dsp.exec_cmd("foot -e fish -c pi"))
 
 hl.bind("SUPER + O", hl.dsp.exec_cmd("obsidian"))
 hl.bind("SUPER + T", hl.dsp.exec_cmd("qutebrowser"))
@@ -162,7 +164,7 @@ hl.bind("SUPER+ALT + Page_Up", hl.dsp.window.move({ workspace = -1 }))
 hl.bind("SUPER+SHIFT + Page_Down", hl.dsp.window.move({ workspace = "r+1" }))
 hl.bind("SUPER+SHIFT + Page_Up", hl.dsp.window.move({ workspace = "r-1" }))
 hl.bind("SUPER+ALT + S", hl.dsp.window.move({ workspace = "special", silent = true }))
-hl.bind("SUPER + P", hl.dsp.window.pin())
+-- hl.bind("SUPER + P", hl.dsp.window.pin())
 
 hl.bind("CTRL+SUPER + S", hl.dsp.workspace.toggle_special(""))
 

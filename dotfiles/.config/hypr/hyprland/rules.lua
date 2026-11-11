@@ -33,8 +33,8 @@ hl.window_rule({
     title = "^(floating-foot)$",
   },
   float = true,
-  size = "(monitor_w*0.25) (monitor_h*0.4)",
-  move = "((cursor_x)-(monitor_w*0.125)) ((cursor_y)-(monitor_h*0.2))",
+  size = "(monitor_w*0.27) (monitor_h*0.4)",
+  move = "((cursor_x)-(monitor_w*0.1285)) ((cursor_y)-(monitor_h*0.2))",
 })
 
 hl.window_rule({
@@ -67,6 +67,16 @@ hl.window_rule({
 hl.window_rule({
   match = {
     class = "^(org.gnome.NetworkDisplays)$",
+  },
+  float = true,
+  center = true,
+  size = "(monitor_w*0.66) (monitor_h*0.66)",
+})
+
+hl.window_rule({
+  match = {
+    -- title starts with '[rust]''
+    title = "^\\[rust\\](.*)$",
   },
   float = true,
   center = true,
