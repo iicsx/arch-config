@@ -1,6 +1,8 @@
 {
   "enabled": true,
+  "header": false,
   "inlineFooter": true,
+  "copyButtons": true,
   "settingsLanguage": "en",
   "cursorStyle": "block",
   "icons": {
@@ -15,8 +17,11 @@
     "gitCommit": false,
     "runtime": true,
     "context": true,
+    "contextBar": true,
     "tokens": true,
     "cost": true,
+    "liveTps": true,
+    "extensionSegments": true,
     "extensionStatuses": true,
     "capitalizeProviderName": true,
     "nerdIconSpacing": true
@@ -32,5 +37,10 @@
   },
   "thinkingPeek": {
     "lines": 1
+  },
+  "toolView": {
+    "mode": "compact",
+    "extensionTools": true,
+    "exclude": []
   }
 }
