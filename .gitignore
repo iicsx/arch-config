@@ -8,4 +8,6 @@ state/
 *.bak
 
 dotfiles/.pi/agent/sessions
+dotfiles/.pi/agent/auth.json
 dotfiles/.pi/agent/tmp
+dotfiles/.pi/subagent-sessions/
