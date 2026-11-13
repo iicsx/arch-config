@@ -30,6 +30,13 @@ function tobin
   echo 'obase=2;ibase=10;'$argv[1] | bc
 end
 
+function fromhex
+  echo 'obase=10;ibase=16;'$argv[1] | bc
+end
+
+function tohex
+  echo 'obase=16;ibase=10;'$argv[1] | bc
+end
 
 if status is-interactive
     # Commands to run in interactive sessions can go here
@@ -49,7 +56,7 @@ export QT_QPA_PLATFORMTHEME="qt6ct"
 alias v='$EDITOR'
 alias vh='$EDITOR .'
 
-alias la='ls -la'
+alias la='lsd -la'
 alias ..='cd ..'
 alias ...='cd ...'
 
@@ -70,6 +77,10 @@ alias sudoe='sudo -E -s'
 alias nm='TERM=screen-256color neomutt'
 
 alias cl='find . -type f -exec wc -l {} +'
+
+alias s='yay -Ss'
+alias i='yay -S'
+alias u='yay -Syyu'
 
 # function fish_prompt
 #   set_color cyan; echo (pwd)
