@@ -3,6 +3,7 @@ require("hyprland.execs")
 require("hyprland.general")
 require("hyprland.rules")
 require("hyprland.colors")
+require("hyprland.animations")
 require("hyprland.keybinds")
 
 require("noctalia.noctalia-colors")

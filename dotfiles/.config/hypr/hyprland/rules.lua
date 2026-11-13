@@ -7,8 +7,9 @@
 
 hl.window_rule({
   match = {
-    class = "^(foot)$",
+    class = "^(kitty)$",
   },
+  tile = true,
   opacity = 0.95,
   no_blur = true
 })

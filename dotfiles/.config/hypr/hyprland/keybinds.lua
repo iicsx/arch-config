@@ -12,8 +12,8 @@ hl.bind("XF86AudioLowerVolume",
   { locked = true, repeating = true })
 
 --#! General
-hl.bind("SUPER + Q", hl.dsp.exec_cmd("foot"))
-hl.bind("SUPER+SHIFT + Q", hl.dsp.exec_cmd("foot --title floating-foot"))
+hl.bind("SUPER + Q", hl.dsp.exec_cmd("kitty --start-as=minimized"))
+hl.bind("SUPER+SHIFT + Q", hl.dsp.exec_cmd("kitty --start-as=minimized --title floating-foot"))
 -- open foot and use the pi command
 hl.bind("SUPER + P", hl.dsp.exec_cmd("foot -e fish -c pi"))
 
