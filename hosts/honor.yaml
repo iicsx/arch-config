@@ -18,8 +18,8 @@ enabled_modules:
   - software/work
   - software/uni
   - system
-  - terminal/fish
-  - terminal/foot
+  - terminal/shell
+  - terminal/emulator
   - virtualization/vm
   - dev/java
   - dev/js

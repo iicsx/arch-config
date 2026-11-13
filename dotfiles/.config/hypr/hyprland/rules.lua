@@ -9,7 +9,7 @@ hl.window_rule({
   match = {
     class = "^(kitty)$",
   },
-  tile = true,
+  fullscreen_state = "0 0",
   opacity = 0.95,
   no_blur = true
 })

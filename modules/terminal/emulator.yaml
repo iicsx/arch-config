@@ -1,9 +1,9 @@
 description: Foot terminal emulator
 
 packages:
-  - foot
-  - foot-terminfo
-  - ttf-0xproto-nerd
+  - kitty
+  # - foot-terminfo
+  - ttf-hack-nerd
   - zoxide
   - starship
   - fastfetch
