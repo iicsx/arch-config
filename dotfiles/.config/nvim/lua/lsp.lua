@@ -1,11 +1,10 @@
 local lsp_servers = {
   "bashls",
   "clangd",
-  "haskell-lsp",
   "jdtls",
   "lua_ls",
   "marksman",
-  "rust_analzer",
+  "rust_analyzer",
   "tinymist",
   "ts_ls",
   "verible-verilog-lsp",
@@ -35,12 +34,11 @@ vim.api.nvim_create_autocmd('LspAttach', {
     vim.keymap.set("n", "<leader>vws", function()
       vim.lsp.buf.workspace_symbol()
     end, opts)
-    --	vim.keymap.set("n", "<leader>vd", function() vim.diagnostics,open_float() end, opts)
     vim.keymap.set("n", "[d", function()
-      vim.diagnostics.goto_next()
+      vim.diagnostic.jump({ count = 1, float = true })
     end, opts)
     vim.keymap.set("n", "]d", function()
-      vim.diagnostics.goto_prev()
+      vim.diagnostic.jump({ count = -1, float = true })
     end, opts)
     vim.keymap.set("n", "<leader>vca", function()
       vim.lsp.buf.code_action()

@@ -17,6 +17,8 @@ local themes = {
   "oh-lucy",
   "sonokai",
   "tokyonight",
+  "tokyodark",
+  "koda-moss"
 }
 
 DEFAULT_COLOR = themes[theme_index]
