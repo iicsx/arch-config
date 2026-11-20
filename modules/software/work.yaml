@@ -6,6 +6,5 @@ packages:
   - nextcloud-client
   - vpnc
   - zoom
-  - zotero-bin
 
 conflicts: []

@@ -7,7 +7,6 @@ packages:
   - typescript
   - typescript-language-server
   - prettier
-  - prettierd
 
 conflicts: []
 
