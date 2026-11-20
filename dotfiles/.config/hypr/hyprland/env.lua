@@ -21,6 +21,7 @@ hl.env("XCURSOR_SIZE", "24")
 -- ######## Toolkit backends ########
 hl.env("QT_QPA_PLATFORM", "wayland;xcb")
 hl.env("GTK_BACKEND", "wayland")
+hl.env("GTK_THEME", "Adwaita:dark")
 hl.env("SDL_VIDEODRIVER", "wayland")
 hl.env("CLUTTER_BACKEND", "wayland")
 hl.env("ELECTRON_OZONE_PLATFORM_HINT", "auto")
