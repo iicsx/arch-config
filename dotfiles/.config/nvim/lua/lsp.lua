@@ -4,6 +4,7 @@ local lsp_servers = {
   "jdtls",
   "lua_ls",
   "marksman",
+  "python",
   "rust_analyzer",
   "tinymist",
   "ts_ls",
@@ -12,7 +13,7 @@ local lsp_servers = {
 }
 vim.lsp.enable(lsp_servers)
 
-vim.lsp.handlers["textDocument/hover"] = function() vim.lsp.buf.hover { border = "rounded" } end
+-- vim.lsp.handlers["textDocument/hover"] = function() vim.lsp.buf.hover { border = "rounded" } end
 
 vim.lsp.handlers["textDocument/signatureHelp"] = function() vim.lsp.buf.handlers.signature_help { border = "rounded" } end
 
