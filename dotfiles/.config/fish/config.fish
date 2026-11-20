@@ -12,13 +12,13 @@ function mkcd
 end
 
 function fish_greeting
-    echo -ne '\x1b[38;5;16m'  # Set colour to primary
+    # echo -ne '\x1b[38;5;16m'  # Set colour to primary
     echo "   __     __     ______     ______     __  __    "
     echo "  /\ \   /\ \   /\  ___\   /\  ___\   /\_\_\_\   "
     echo "  \ \ \  \ \ \  \ \ \____  \ \___  \  \/_/\_\/_  "
     echo "   \ \_\  \ \_\  \ \_____\  \/\_____\   /\_\/\_\ "
     echo "    \/_/   \/_/   \/_____/   \/_____/   \/_/\/_/ "
-    set_color normal
+    echo -ne '\x1b[38;5;16m'  # Set colour to primary
     fastfetch --key-padding-left 7
 end
 
@@ -74,7 +74,7 @@ alias gbc='git branch --show-current'
 alias qo='qutebrowser -- :open'
 
 alias sudoe='sudo -E -s'
-alias nm='TERM=screen-256color neomutt'
+alias nm='TERM=xterm-direct neomutt'
 
 alias cl='find . -type f -exec wc -l {} +'
 
