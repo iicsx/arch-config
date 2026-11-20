@@ -1,5 +1,6 @@
 return {
   "MeanderingProgrammer/markdown.nvim",
+  ft = { "markdown" },
   dependencies = {
     "nvim-tree/nvim-web-devicons",
   },

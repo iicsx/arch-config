@@ -1,5 +1,6 @@
 return {
   "iicsx/nvim-fox",
+  event = "ModeChanged", -- intended for "when entering visual mode" but oh well but oh well
   config = function()
     require("fox").setup({
       context = {

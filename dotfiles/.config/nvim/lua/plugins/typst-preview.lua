@@ -1,5 +1,6 @@
 return {
   "chomosuke/typst-preview.nvim",
+  ft = "typst",
   config = function()
     local CURRENT_SCHEME = "never"
 

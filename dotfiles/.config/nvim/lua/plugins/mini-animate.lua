@@ -1,5 +1,6 @@
 return {
   "echasnovski/mini.animate",
+  event = { "BufReadPre", "BufNewFile" },
   config = function()
     require("mini.animate").setup({
       scroll = {

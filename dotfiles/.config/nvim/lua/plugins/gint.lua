@@ -1,5 +1,6 @@
 return {
   "iicsx/gint-nvim",
+  cmd = { "GitStatus", "GintCommit" },
   dependencies = {
     "tpope/vim-fugitive",
   },
