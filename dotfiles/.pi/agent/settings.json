@@ -14,6 +14,7 @@
   },
   "tuiMode": "fullscreen",
   "extensionChangelogVersions": {
-    "{\"source\":\"npm:pi-open-tui\",\"scope\":\"user\"}": "0.4.4"
-  }
+    "{\"source\":\"npm:pi-open-tui\",\"scope\":\"user\"}": "0.4.6"
+  },
+  "defaultThinkingLevel": "medium"
 }
